@@ -1,26 +1,54 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router"
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "login",
+    component: () => import("@/components/Login.vue"),
+    meta: {
+      keepAlive: false,
+    },
   },
   {
-    path: "/about",
+    path: "/Home",
+    name: "Home",
+    component: () => import("@/views/Home.vue"),
+    meta: {
+      keepAlive: true,
+    },
+  },
+  {
+    path: "/About",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
-];
+    component: () => import("@/views/About.vue"),
+    meta: {
+      keepAlive: true,
+    },
+  },
+  {
+    path: "/500",
+    name: "serverError",
+    component: () => import("@/components/serverError.vue"),
+  },
+  {
+    path: "/403",
+    name: "notPermission",
+    component: () => import("@/components/notPermission.vue"),
+  },
+  {
+    path: "/404",
+    name: "notFound",
+    component: () => import("@/components/NoFind.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*", // 此处需特别注意置于最底部
+    redirect: "/404",
+  },
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-});
+  routes,
+})
 
-export default router;
+export default router

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>重定向</h1>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import { Options, Vue } from "vue-class-component";
     msg: String
   }
 })
-export default class HelloWorld extends Vue {
+export default class NotPermission extends Vue {
   msg!: string;
 }
 </script>

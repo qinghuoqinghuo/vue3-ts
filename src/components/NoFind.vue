@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    404
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import { Options, Vue } from "vue-class-component";
     msg: String
   }
 })
-export default class HelloWorld extends Vue {
+export default class NoFind extends Vue {
   msg!: string;
 }
 </script>
