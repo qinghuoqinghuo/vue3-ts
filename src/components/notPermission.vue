@@ -1,19 +1,12 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>重定向</h1>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-
-@Options({
-  props: {
-    msg: String
-  }
-})
+import { Vue } from "vue-class-component";
 export default class NotPermission extends Vue {
-  msg!: string;
 }
 </script>
 

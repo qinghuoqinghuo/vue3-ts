@@ -1,19 +1,11 @@
 <template>
-  <div class="hello">
-    404
-  </div>
+  <div>404</div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import { Vue } from "vue-class-component";
 
-@Options({
-  props: {
-    msg: String
-  }
-})
 export default class NoFind extends Vue {
-  msg!: string;
 }
 </script>
 
