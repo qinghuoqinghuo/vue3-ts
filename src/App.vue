@@ -6,14 +6,18 @@
           <header-nav></header-nav>
         </keep-alive>
       </el-header>
-      <el-container>
+      <el-container class="index-page">
         <el-aside>
           <keep-alive>
-            <left></left>
+            <el-scrollbar>
+              <left></left>
+            </el-scrollbar>
           </keep-alive>
         </el-aside>
         <el-main>
-          <router-view></router-view>
+          <el-scrollbar>
+            <router-view></router-view>
+          </el-scrollbar>
         </el-main>
       </el-container>
     </el-container>
@@ -35,8 +39,8 @@ export default {
 html,
 body,
 #app {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 body {
   margin: 0;
@@ -47,18 +51,22 @@ body {
     margin: 0;
     padding: 0;
   }
-  .el-container {
-    height: 100%;
-  }
   .el-menu {
     border-right: none;
   }
   .el-aside {
     width: 220px !important;
+    height: calc(100vh - 60px);
     background: #272822;
   }
+  .el-main {
+    padding: 5px;
+  }
   #index {
-    height: 100%;
+    height: 100vh;
+  }
+  .index-page {
+    height: calc(100vh - 60px);
   }
 }
 </style>

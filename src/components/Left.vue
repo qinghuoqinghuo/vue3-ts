@@ -25,6 +25,62 @@
         <el-menu-item index="">选项1</el-menu-item>
       </el-submenu>
     </el-submenu>
+    <el-submenu index="">
+      <template #title>
+        <i class="el-icon-location"></i>
+        <span>导航一</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="Home">Home</el-menu-item>
+        <el-menu-item index="About">About</el-menu-item>
+      </el-menu-item-group>
+      <el-submenu index="">
+        <template #title>选项4</template>
+        <el-menu-item index="">选项1</el-menu-item>
+      </el-submenu>
+    </el-submenu>
+    <el-submenu index="">
+      <template #title>
+        <i class="el-icon-location"></i>
+        <span>导航一</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="Home">Home</el-menu-item>
+        <el-menu-item index="About">About</el-menu-item>
+      </el-menu-item-group>
+      <el-submenu index="">
+        <template #title>选项4</template>
+        <el-menu-item index="">选项1</el-menu-item>
+      </el-submenu>
+    </el-submenu>
+    <el-submenu index="">
+      <template #title>
+        <i class="el-icon-location"></i>
+        <span>导航一</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="Home">Home</el-menu-item>
+        <el-menu-item index="About">About</el-menu-item>
+      </el-menu-item-group>
+      <el-submenu index="">
+        <template #title>选项4</template>
+        <el-menu-item index="">选项1</el-menu-item>
+      </el-submenu>
+    </el-submenu>
+    <el-submenu index="">
+      <template #title>
+        <i class="el-icon-location"></i>
+        <span>导航一</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="Home">Home</el-menu-item>
+        <el-menu-item index="About">About</el-menu-item>
+      </el-menu-item-group>
+      <el-submenu index="">
+        <template #title>选项4</template>
+        <el-menu-item index="">选项1</el-menu-item>
+      </el-submenu>
+    </el-submenu>
     <el-menu-item index="">
       <i class="el-icon-menu"></i>
       <template #title>导航二</template>
