@@ -27,7 +27,7 @@ import { Options, Vue } from "vue-class-component";
   },
   methods: {
     onSubmit() {
-      this.$router.push({ name: "Home" });
+      this.$router.push({ name: "Calendar" });
     }
   }
 })

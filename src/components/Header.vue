@@ -1,6 +1,7 @@
 <template>
-  <div id="Header">
-    <p>经开区</p>
+  <div id="Header" class="header">
+   <el-avatar icon="el-icon-user-solid" size="medium"></el-avatar>
+    <span class="header-item">admin</span>
   </div>
 </template>
 
@@ -19,8 +20,15 @@ export default class Header extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#Header {
+.header {
+  color:#ccc;
   height: 60px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &-item {
+    margin:0 15px;
+  }
 }
 </style>

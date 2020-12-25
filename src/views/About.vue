@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <markdown></markdown>
 </template>
+
+<script>
+import { Options, Vue } from "vue-class-component";
+import markdown from "@/components/Markdown.vue";
+
+@Options({
+  components: {
+    markdown
+  }
+})
+export default class About extends Vue {}
+</script>
+
+<style>
+</style>

@@ -10,9 +10,17 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: "/Home",
-    name: "Home",
-    component: () => import("@/views/Home.vue"),
+    path: "/Calendar",
+    name: "Calendar",
+    component: () => import("@/components/Calendar.vue"),
+    meta: {
+      keepAlive: true,
+    },
+  },
+  {
+    path: "/Timeline",
+    name: "Timeline",
+    component: () => import("@/components/Timeline.vue"),
     meta: {
       keepAlive: true,
     },
